@@ -6,7 +6,7 @@ Stream any RTSP stream and output to websocket for consumption by [jsmpeg](https
 Usage:
 
 ```
-$ npm install node-rtsp-stream
+$ npm install @heotaein/node-rtsp-stream
 ```
 
 On server:
