@@ -79,7 +79,8 @@ VideoStream.prototype.startMpeg1Stream = function() {
     }
   })
   this.mpeg1Muxer.on('ffmpegStderr', function(data) {
-    return global.process.stderr.write(data)
+    //return global.process.stderr.write(data);
+    return global.process.stderr.write(); //에러 로그 미출력
   })
   this.mpeg1Muxer.on('exitWithError', () => {
     return this.emit('exitWithError')
